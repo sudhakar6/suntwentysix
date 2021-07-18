@@ -1,0 +1,9 @@
+<template>
+	<template if:true={productInformation}>
+		<lightning-card title={componentTitle} icon-name="standard:hierarchy">
+			<lightning-datatable key-field="Card_Type__c" data={productInformation} columns={columnsforDataTable}
+				hide-checkbox-column>
+			</lightning-datatable>
+		</lightning-card>
+	</template>
+</template>
